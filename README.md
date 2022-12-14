@@ -22,8 +22,8 @@ Note: the project was supposed to be landing page but i don't have portfolio so 
 
 ## Resources
 
-[Navigator.clipboard](https://developer.mozilla.org/en-US/docs/Web/API/Navigator/clipboard)
-[Window.scrollY](https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollY)
-[String.prototype.match()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/match)
-[Element.getBoundingClientRect()](https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect)
+[Navigator.clipboard](https://developer.mozilla.org/en-US/docs/Web/API/Navigator/clipboard)<br>
+[Window.scrollY](https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollY)<br>
+[String.prototype.match()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/match)<br>
+[Element.getBoundingClientRect()](https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect)<br>
 [scrollIntoView()](https://dev.to/rohank_2502/implementing-smooth-scroll-using-javascript-28n3)
