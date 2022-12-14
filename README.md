@@ -1,5 +1,7 @@
 # Landing Page (Portfolio)
 
+## [Portfolio Link](https://portfolio-.abdelaziz-elshr.repl.co/){:target="_blank" rel="noopener"}
+
 this porject is part of [Professional Web Development NanoDegree](https://egfwd.com/specializtion/web-development-professional/?utm_source=googlesearch&utm_medium=ads&utm_campaign=branding&utm_adgroup=Udacity&gclid=Cj0KCQiAnNacBhDvARIsABnDa6-vuTZmWIK4LK3uvTdPQ_sBo153HdzwvuaFkYypzU3cS3b2wWVWOYkaAmEdEALw_wcB) Provided by [Udacity](https://www.udacity.com) and Sponsored by [EGFWD](https://www.egfwd.com/)  
 
 ![page preview](preview/page%20preview.png)
@@ -28,4 +30,3 @@ Note: the project was supposed to be landing page but i don't have portfolio so 
 [Element.getBoundingClientRect()](https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect)<br>
 [scrollIntoView()](https://dev.to/rohank_2502/implementing-smooth-scroll-using-javascript-28n3)
 
-## [Portfolio Link](https://portfolio-.abdelaziz-elshr.repl.co/)
