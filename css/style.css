@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap');
+/* global styling */
+*{
+	scroll-snap-type: y;
+} 
+body{
+	padding: 0;
+	margin: 0;
+	font-family: 'STIX Two Math', serif;
+	background: linear-gradient(-45deg, #306baf, #3fb92f, #1ca3d4, #5e61fd);
+	background-size: 400% 400%;
+	width: 100%;
+	height: 100%;
+	animation: animate 20s infinite ;
+}
+
+@keyframes animate {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+a{
+	text-decoration: none;
+}
+button{
+	background-color: rgb(72, 19, 88);
+	border: none;
+	border-radius: 10px;
+	height: 40px;
+	width: 150px;
+	color: white;
+	cursor: pointer;
+	transition: 0.2s;
+}
+button:hover{
+	box-shadow: 0 0 20px 0 rgb(72, 19, 88);
+	transform: scale(1.05);
+}
+button:active{
+	box-shadow: 0;
+	background-color: black;
+	transform: scale(1);
+}
+li{
+	list-style: none;
+}
+
+section{
+	text-align: center;
+	margin: auto;
+	padding: 100px 0;
+	background-color: rgba(0, 0, 0, 0.247);
+	border-radius: 10px;
+	margin: 20px auto;
+	width: 98%;
+	font-size: 1.5em;
+	line-height: 15px;
+	color: wheat;
+	transition: 0.4s;
+	scroll-snap-align: center;
+}
+section h3{
+		font-size: 2em;
+}
+.active-section{
+	background-color: rgba(0, 0, 0, 0.534);
+	
+}
+/*---------------------------*/
+
+/* navbar */
+header{
+		position: fixed;
+	top: 0;
+	width: 100%;
+	transition: 0.2s;
+	z-index: 9999;
+	margin: auto;
+}
+nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: rgba(34, 34, 34, 0.884);
+	width: 100%;
+	transition: 0.4s;
+}
+nav ul {
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
+nav ul li{
+	list-style: none;
+}
+nav ul li a{
+	color: white;
+	display: block;
+	padding: 1em;
+	transition: 0.5s;
+	font-size: 1.2em;
+}
+nav ul li a:hover{
+	background-color: rgba(255, 255, 255, 0.199);
+}
+nav ul li{
+	margin-right: 2px;
+}
+nav ul li:last-child{
+	margin-right: 5px;
+}
+nav h1{
+	font-size: 2.5em;
+	margin: 10px;
+	color: white;
+	transition: 0.3s;
+}
+nav h1:hover{
+	transform: scale(1.1) rotate(-3deg);
+	color: rgb(8, 194, 184);
+	letter-spacing: 5px;
+	
+}
+nav h1:active{
+	transform: scale(1);
+	color: white;
+	letter-spacing: 0;
+}
+.scroll{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	transition: 0.2s;
+	z-index: 9999;
+	margin: auto;
+}
+
+.active-link{
+	background-color: rgba(255, 255, 255, 0.199);
+}
+/*---------------------------*/
+
+/*sections*/
+/*whoIam section */
+#whoIam{
+	padding-top: 100px;
+	margin-top: 0px;
+}
+#whoIam #graduation{
+	width: 60%;
+	margin: auto;
+	line-height: 40px;
+}
+#whoIam #me img{
+	width: 300px;
+	transition: 0.3s;
+	border-radius: 50%;
+	box-shadow: 0 0 20px 0;
+	z-index: -1;
+	opacity: 0.8;
+	color: black;
+}
+#whoIam #home img{
+	position: relative;
+	bottom: 8px;
+	display: block;
+	margin: auto;
+}
+
+#whoIam #graduation img{
+	display: block;
+	width: 25px;
+	margin: auto;
+}
+
+/*---------------------------*/
+/*looking for section*/
+#lookingFor{
+	line-height: 30px;
+}
+#lookingFor p{
+	width: 80%;
+	margin: 40px auto;
+}
+/*---------------------------*/
+/*skills section*/
+#skills{
+	text-align: left;
+}
+#skills .inner, #skills h3{
+	text-align: center;
+}
+#skills h3{
+	margin: 0;
+}
+#skills img{
+	margin-top: 10px;
+	margin-right: 5px;
+}
+#skills-list li span, #skills-list li img{
+	position: relative;
+	bottom: 5px;
+}
+.border{
+	width: 60%;
+	border: 1px solid rgba(0, 0, 0, 0.658);
+	border-radius: 5px;
+	height: 17px;
+	font-size: 17px;
+	overflow: hidden;
+}
+#skills .inner{
+	background-color: #518f1e;
+	border-radius: 5px;
+	height: inherit;
+}
+/*---------------------------*/
+/*certificates section*/
+
+#certificates div p .btn{
+	display: block;
+	width: 9%;
+	margin: 40px auto;
+	color: rgb(114, 151, 255);
+}
+#certificates div p a img{
+	position: relative;
+}
+#udacity{
+	top: 8px;
+	margin: 0 5px;
+}
+#egfwd{
+	top: 19px;
+	margin: 0 -20px;
+}
+/*---------------------------*/
+/*contact me section*/
+#contactMe{
+	padding: 100px 0 0 0;
+	height: 420px;
+	margin:0 0 10px auto;
+	width: 100%;
+	border-radius: 0;
+	position: relative;
+	bottom: -10px;
+}
+#contactMe p{
+	position: relative;
+	top: 30px;
+	font-size: 2.5em;
+	margin-bottom: 100px;
+}
+#email {
+	position: relative;
+	transition: 0.4s;
+	top: 20px;
+}
+#email a{
+	color: wheat;
+}
+#contactMe img{
+	transition: 0.3s;
+	width: 50px;
+}
+#contactMe img:hover{
+	transform: scale(1.1);
+}
+#emailAnchor{
+	transition: 0.2s;
+}
+#emailAnchor:hover{
+	letter-spacing: 1px;
+}
+#copy{
+	margin-left: 5px;
+	width: 60px;
+	height: 25px;
+	font-size: 15px;
+}
+#email-text{
+	display: none;
+}
+.copied{
+	background-color: rgb(45, 179, 45);
+}
+#mail-message{
+	display: block;
+	font-size: 15px;
+	margin-bottom: 30px;
+}
+/*---------------------------*/
+
+
+
+/* scroll up button */
+
+#up{
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	background-color: rgba(0, 0, 0, 0.568);
+	clip-path: polygon(50% 0, 100% 100%, 0 100%);
+	width: 50px;
+	height: 50px;
+	transition: 0.3s;
+	z-index: 9999;
+}
+#up:hover{
+	background-color: rgba(0, 0, 0, 0.768);
+}
+
+
+/*---------------------------*/
+
+/* break points */
+
+@media screen and (max-width: 800px){
+	nav{
+		flex-direction: column;
+	}
+	nav ul li a{
+		padding: 10px;
+		font-size: 1.4em;
+	}
+	#certificates div p .btn{
+		width: 30%;
+	}
+}
+
+@media screen and (max-width: 600px){
+	nav ul li a{
+		padding: 5px;
+		font-size: 20px;
+		transition: 0.3s;
+	}
+	#up{
+		bottom: 5px;
+		right: 5px;
+		height: 40px;
+	}
+}
+
+@media screen and (max-width: 475px){
+	#intro #me img{
+		width: 180px;
+		transition: 0.3s;
+	}
+	body{
+		font-size: 10px;
+	}
+	nav ul{
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	nav ul li a{
+		font-size: 15px;
+	}
+	#whoIam{
+		padding-top: 120px;
+	}
+	#certificates a button{
+		position: relative;
+		right: 20px;
+	}
+	#up{
+		bottom: 5px;
+		right: 5px;
+		height: 30px;
+	}
+}
+
+@media screen and (max-width: 313px) {
+		#emailAnchor{
+		position: relative;
+		bottom: 15px;
+	}
+}
+/*---------------------------*/
