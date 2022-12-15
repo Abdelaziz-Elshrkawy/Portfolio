@@ -2,7 +2,11 @@
 
 ## [Portfolio Link](https://Portfolio.abdelaziz-elshr.repl.co)
 
+<<<<<<< HEAD
 This project is part of [Professional Web Development NanoDegree](https://egfwd.com/specializtion/web-development-professional/?utm_source=googlesearch&utm_medium=ads&utm_campaign=branding&utm_adgroup=Udacity&gclid=Cj0KCQiAnNacBhDvARIsABnDa6-vuTZmWIK4LK3uvTdPQ_sBo153HdzwvuaFkYypzU3cS3b2wWVWOYkaAmEdEALw_wcB) Provided by [Udacity](https://www.udacity.com) and Sponsored by [EGFWD](https://www.egfwd.com/)  
+=======
+this porject is part of [Professional Web Development NanoDegree](https://egfwd.com/specializtion/web-development-professional/?utm_source=googlesearch&utm_medium=ads&utm_campaign=branding&utm_adgroup=Udacity&gclid=Cj0KCQiAnNacBhDvARIsABnDa6-vuTZmWIK4LK3uvTdPQ_sBo153HdzwvuaFkYypzU3cS3b2wWVWOYkaAmEdEALw_wcB) Provided by [Udacity](https://www.udacity.com) and Sponsored by [EGFWD](https://www.egfwd.com/)  
+>>>>>>> 70ebbdec8006ecbb5c22a53e9525f9e531322177
 
 ![page preview](preview/page%20preview.png)
 
@@ -34,8 +38,16 @@ Note: the project was supposed to be landing page but i don't have portfolio so 
 
 ## Resources
 
+<<<<<<< HEAD
 [Navigator.clipboard](https://developer.mozilla.org/en-US/docs/Web/API/Navigator/clipboard)\
 [Window.scrollY](https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollY)\
 [String.prototype.match()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/match)\
 [Element.getBoundingClientRect()](https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect)\
+=======
+[Navigator.clipboard](https://developer.mozilla.org/en-US/docs/Web/API/Navigator/clipboard)<br>
+[Window.scrollY](https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollY)<br>
+[String.prototype.match()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/match)<br>
+[Element.getBoundingClientRect()](https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect)<br>
+>>>>>>> 70ebbdec8006ecbb5c22a53e9525f9e531322177
 [scrollIntoView()](https://dev.to/rohank_2502/implementing-smooth-scroll-using-javascript-28n3)
+
