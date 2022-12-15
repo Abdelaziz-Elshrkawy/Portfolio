@@ -59,7 +59,7 @@ const data = {
             logo: 'https://angular.io/assets/images/logos/angular/angular.svg'
         }
     ],
-    resumeLink: 'https://drive.google.com/file/d/1kWHapGO0FfpJzy1EK26kz1etRbuPoMX6/view?usp=share_link',
+    resumeLink: 'https://docs.google.com/document/d/1aBY0Y8nd-RnYy24lyWNM5UBSwfTM139p/edit',
     certificates: [
         {
             name: 'Challenger',
