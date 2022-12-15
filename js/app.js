@@ -121,7 +121,7 @@ const navLinks = (() => {
     section.forEach((e) => {
         const id = e.id
         const li = document.createElement('li');
-        li.innerHTML = `<a id='${id}-link' href='#${id}'>${id.charAt(0).toUpperCase() + id.slice(1)}</a>`
+        li.innerHTML = `<a id='${id}-link' class='hover-link' href='#${id}'>${id.charAt(0).toUpperCase() + id.slice(1)}</a>`
         navFragment.appendChild(li)
     })
     navUl.appendChild(navFragment)
@@ -217,10 +217,12 @@ document.addEventListener('scroll', () => {
         const navLink = document.getElementById(linkId);
         if (elementPosition.top <= 450 && elementPosition.bottom >= 450) {
             e.classList.add('active-section')
+            navLink.classList.remove('hover-link')
             navLink.classList.add('active-link')
         } else {
             e.classList.remove('active-section')
             navLink.classList.remove('active-link')
+            navLink.classList.add('hover-link')
         }
         //adding title attribute to page title when reaching the end of the page
         if (e.id === 'contactMe' && elementPosition.top <= 850 && elementPosition.bottom <= 950) {
