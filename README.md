@@ -12,7 +12,7 @@ Note: the project was supposed to be landing page but i don't have portfolio so 
 
 -HTML\
 -CSS\
--Javascript\
+-Javascript
 
 ## Installation
 
