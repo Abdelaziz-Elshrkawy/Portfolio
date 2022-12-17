@@ -4,6 +4,7 @@ const upBtn = document.getElementById('up');
 const resumeAnchor = document.getElementsByClassName('resumeAnchor');
 const certificates = document.getElementById('certificates');
 const skillsList = document.getElementById('skills-list');
+const projects = document.getElementById('projects');
 const copyBtn = document.getElementById('copy');
 const email = document.getElementById('email-text');
 const section = document.querySelectorAll('section');
@@ -70,14 +71,31 @@ const data = {
             name: 'Advanced Full Stack NanoDegree',
             link: 'https://graduation.udacity.com/confirm/LMVD9N2T',
             date: 'AUG 2022',
-            projects: {
-
-            }
+            projects: [
+                {
+                    name: 'image Processing API',
+                    link: 'https://github.com/Abdelaziz-Elshrkawy/Imag-Processing-API'
+                },
+                {
+                    name: 'Store Front API',
+                    link: 'https://github.com/Abdelaziz-Elshrkawy/Store-Front-API'
+                },
+                {
+                    name: 'Hosting a Full Stack Application',
+                    link: 'https://github.com/Abdelaziz-Elshrkawy/Hosting-a-Full-Stack-Application'
+                }
+            ],
         },
         {
             name: 'Angular NanoDegree',
             link: 'https://graduation.udacity.com/confirm/GAG2YEXD',
-            date: 'OCT 2022'
+            date: 'OCT 2022',
+            projects: [
+                {
+                    name: 'MyStore',
+                    link: 'https://github.com/Abdelaziz-Elshrkawy/MyStore-Udacity-Angular'
+                }
+            ]
         }
     ],
     provider: [
@@ -128,9 +146,52 @@ const navLinks = (() => {
 })()
 
 
+
 // certificates section
 const certificatesContent = (() => {
     const certificatesFragment = new DocumentFragment();
+    for (let i = 0; i < data.certificates.length; i++){
+        const div = document.createElement('div');
+        const p = document.createElement('p');
+        const projectsDiv = document.createElement('div');
+        const certificateLinkAnchor = document.createElement('a');
+        const projectText = document.createElement('span');
+        //projects link
+        //project text title before the project
+        projectText.setAttribute('class', 'project-text')
+        projectText.textContent = 'Projects:'
+        projectsDiv.appendChild(projectText)
+        if (data.certificates[i].projects) {
+            for (let z = 0; z < data.certificates[i].projects.length; z++){
+                const anchor = document.createElement('a');
+                anchor.setAttribute('href', data.certificates[i].projects[z].link)
+                anchor.setAttribute('target', 'blank')
+                anchor.textContent = data.certificates[i].projects[z].name
+                projectsDiv.appendChild(anchor);
+            }
+        }
+        projectsDiv.setAttribute('class', 'project-div')
+        //main text
+        p.innerHTML = `${data.certificates[i].name} track on ${data.certificates[i].date} provided by <a target='blank' href='${data.provider[0].website}'>
+                        <img id=${data.provider[0].name} src='${data.provider[0].logo}' alt='provider'  height='30'/></a>  and sponsored by 
+                        <a target='blank' href='${data.provider[1].website}'><img id=${data.provider[1].name} src='${data.provider[1].logo}' alt='provider'  height='50'/></a>`
+        div.appendChild(p)
+        //certificate link
+        certificateLinkAnchor.setAttribute('class', 'btn')
+        certificateLinkAnchor.setAttribute('target', 'blank')
+        certificateLinkAnchor.setAttribute('href', data.certificates[i].link)
+        certificateLinkAnchor.innerHTML = '<button>Certificate link</button>'
+        if(data.certificates[i].projects){div.appendChild(projectsDiv)}
+        div.appendChild(certificateLinkAnchor)
+        //appending created elements to the documentFragment
+        certificatesFragment.appendChild(div)
+    }
+    certificates.appendChild(certificatesFragment)
+})()
+/* <a class='btn' target='blank' href=${data.certificates[i].link}></a> */
+/* const certificatesContent = (() => {
+    const certificatesFragment = new DocumentFragment();
+    const projectsFragment = new DocumentFragment();
     data.certificates.forEach((e) => {
         const div = document.createElement('div');
         const p = document.createElement('p');
@@ -143,7 +204,7 @@ const certificatesContent = (() => {
         certificatesFragment.appendChild(div)
     })
     certificates.appendChild(certificatesFragment)
-})()
+})() */
 
 //skills section
 const skillContent = (() => {
@@ -191,6 +252,22 @@ const skillContent = (() => {
     })
     skillsList.appendChild(skillsFragment)
 })()
+
+//projects section
+/* const projectsContent = (() => {
+    const projectsFragment = new DocumentFragment();
+
+    const projects = data.certificates.filter((e) => {
+        if (e.projects) {
+            const obj = {
+                name: e.name,
+                projects: e.projects
+            }
+            return obj
+        }
+    })
+    console.log(projects[0].projects[0].name)
+})() */
 
 //connect section
 //email copying button
