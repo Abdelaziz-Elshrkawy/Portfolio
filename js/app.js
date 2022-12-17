@@ -170,6 +170,8 @@ const certificatesContent = (() => {
                 projectsDiv.appendChild(anchor);
             }
         }
+        //defining div class
+        div.setAttribute('class', 'container')
         projectsDiv.setAttribute('class', 'project-div')
         //main text
         p.innerHTML = `${data.certificates[i].name} track on ${data.certificates[i].date} provided by <a target='blank' href='${data.provider[0].website}'>
@@ -252,22 +254,6 @@ const skillContent = (() => {
     })
     skillsList.appendChild(skillsFragment)
 })()
-
-//projects section
-/* const projectsContent = (() => {
-    const projectsFragment = new DocumentFragment();
-
-    const projects = data.certificates.filter((e) => {
-        if (e.projects) {
-            const obj = {
-                name: e.name,
-                projects: e.projects
-            }
-            return obj
-        }
-    })
-    console.log(projects[0].projects[0].name)
-})() */
 
 //connect section
 //email copying button

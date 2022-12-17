@@ -232,6 +232,10 @@ nav h1:active{
 	width: 80%;
 	padding: 10px 0;
 }
+#certificates .container{
+	padding-bottom: 25px;
+	border-bottom: 4px solid;
+}
 #certificates div p a img{
 	position: relative;
 }
