@@ -280,12 +280,12 @@ document.addEventListener('scroll', () => {
         const navLink = document.getElementById(linkId);
         if (elementPosition.top <= 450 && elementPosition.bottom >= 450) {
             e.classList.add('active-section')
-            navLink.classList.remove('hover-link')
+            navLink.classList.remove('hover-link') 
             navLink.classList.add('active-link')
         } else {
             e.classList.remove('active-section')
             navLink.classList.remove('active-link')
-            navLink.classList.add('hover-link')
+            navLink.classList.add('hover-link') 
         }
         //adding title attribute to page title when reaching the end of the page
         if (e.id === 'contactMe' && elementPosition.top <= 850 && elementPosition.bottom <= 950) {

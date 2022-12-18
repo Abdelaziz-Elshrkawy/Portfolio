@@ -350,7 +350,11 @@ nav h1:active{
 /*---------------------------*/
 
 /* break points */
-
+@media screen and (max-width: 1200px){
+	nav ul li .hover-link:hover{
+	background-color: transparent;
+	}
+}
 @media screen and (max-width: 900px){
 	nav{
 		flex-direction: column;
