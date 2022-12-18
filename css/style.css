@@ -220,7 +220,6 @@ nav h1:active{
 }
 /*---------------------------*/
 /*certificates section*/
-
 #certificates div p .btn{
 	display: block;
 	width: 9%;
@@ -238,6 +237,11 @@ nav h1:active{
 }
 #certificates div p a img{
 	position: relative;
+}
+#certificates div p span{
+	display: block;
+	font-size: 1.3em;
+	font-weight: bold;
 }
 #udacity{
 	top: 8px;
@@ -355,7 +359,7 @@ nav h1:active{
 	background-color: transparent;
 	}
 }
-@media screen and (max-width: 900px){
+@media screen and (max-width: 980px){
 	nav{
 		flex-direction: column;
 	}
@@ -374,9 +378,12 @@ nav h1:active{
 		top: 10px;
 		left: 8px;
 	}
+	#certificates div p span{
+		margin-bottom: 10px;
+	}
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 625px){
 	nav ul li a{
 		padding: 5px;
 		font-size: 20px;
@@ -393,6 +400,9 @@ nav h1:active{
 	}
 	#certificates div p #udacity{
 		height: 20px;
+	}
+	#certificates div p span{
+		font-size: 1em;
 	}
 }
 

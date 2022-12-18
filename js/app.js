@@ -174,7 +174,7 @@ const certificatesContent = (() => {
         div.setAttribute('class', 'container')
         projectsDiv.setAttribute('class', 'project-div')
         //main text
-        p.innerHTML = `${data.certificates[i].name} track on ${data.certificates[i].date} provided by <a target='blank' href='${data.provider[0].website}'>
+        p.innerHTML = `<span>${data.certificates[i].name}</span> track on ${data.certificates[i].date} provided by <a target='blank' href='${data.provider[0].website}'>
                         <img id=${data.provider[0].name} src='${data.provider[0].logo}' alt='provider'  height='30'/></a>  and sponsored by 
                         <a target='blank' href='${data.provider[1].website}'><img id=${data.provider[1].name} src='${data.provider[1].logo}' alt='provider'  height='50'/></a>`
         div.appendChild(p)
