@@ -302,6 +302,12 @@ nav h1:active{
 	transition: 0.3s;
 	width: 50px;
 }
+#contactMe #twitter{
+	width: 42px; 
+	position: relative; 
+	bottom: 4px;
+	margin: 0 2px;
+}
 #contactMe img:hover{
 	transform: scale(1.1);
 }
