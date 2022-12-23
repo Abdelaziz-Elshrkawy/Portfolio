@@ -434,10 +434,14 @@ nav h1:active{
 	}
 }
 
-@media screen and (max-width: 313px) {
+@media screen and (max-width: 315px) {
 		#emailAnchor{
 		position: relative;
 		bottom: 15px;
+	}
+	#copy{
+		display: block;
+		margin: auto;
 	}
 }
 /*---------------------------*/
