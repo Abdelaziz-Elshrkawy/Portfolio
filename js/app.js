@@ -58,6 +58,16 @@ const data = {
             name: 'angular',
             percent: '50%',
             logo: 'https://angular.io/assets/images/logos/angular/angular.svg'
+        },
+        {
+            name: 'Jasmine',
+            percent: '50%',
+            logo: 'https://jasmine.github.io/images/jasmine-white-circle.svg',
+            style: [
+                {
+                    'background-color': '#a75f98'
+                }
+            ]
         }
     ],
     resumeLink: 'https://drive.google.com/file/d/1kWHapGO0FfpJzy1EK26kz1etRbuPoMX6/view?usp=share_link',
@@ -138,7 +148,7 @@ const smoothScroll = (element) => {
         if (!clickedElement.getAttribute('href')) {
             clickedElement = event.target.parentElement;
         }
-        let id = clickedElement.getAttribute('href').slice(1);
+        const id = clickedElement.getAttribute('href').slice(1);
         document.getElementById(id).scrollIntoView({ behavior: 'smooth' })
     })
 }
@@ -245,6 +255,15 @@ const skillContent = (() => {
             img.setAttribute('alt', e.name)
             img.setAttribute('id', e.name)
         }
+        //adding style attribute
+        if (e.style) {
+            let style = ``;
+            for (let i = 0; i < e.style.length; i++) {
+                style += `${Object.keys(e.style[i])}: ${Object.values(e.style[i])};`
+            }
+            img.setAttribute('style', style)
+            console.log(style)
+        }
         //defining the title of skill
         if (e.name === 'html' || e.name === 'css') {
             span.textContent = e.name.toUpperCase()
@@ -303,7 +322,7 @@ document.addEventListener('scroll', () => {
             navLink.classList.add('hover-link') 
         }
         //adding title attribute to page title when reaching the end of the page
-        if (e.id === 'contactMe' && elementPosition.top <= 850 && elementPosition.bottom <= 950) {
+        if (e.id == 'contactMe' && elementPosition.top <= 850 && elementPosition.bottom <= 950) {
             pageTitle.setAttribute('title', 'Click to Scroll Up')
         } else {
             pageTitle.removeAttribute('title', 'Click to Scroll Up')
