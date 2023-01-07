@@ -323,9 +323,6 @@ nav h1:active{
 	height: 25px;
 	font-size: 15px;
 }
-#email-text{
-	display: none;
-}
 .copied{
 	background-color: rgb(45, 179, 45);
 }
@@ -386,6 +383,9 @@ nav h1:active{
 	}
 	#certificates div p span{
 		margin-bottom: 10px;
+	}
+	#emailAnchor:hover {
+		letter-spacing: default;
 	}
 }
 

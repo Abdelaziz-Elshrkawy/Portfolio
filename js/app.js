@@ -19,6 +19,9 @@ const titleAnchor = document.getElementById('title-anchor');
 
 // object to store changeable data
 const data = {
+    info: {
+        email: 'abdelaziz_elshrkawy53@yahoo.com'
+    },
     skills: [
         {
             name: 'html',
@@ -298,8 +301,7 @@ const skillContent = (() => {
 //connect section
 //email copying button
 copyBtn.addEventListener('click', async () => {
-    const text = email.value
-    await navigator.clipboard.writeText(text)
+    await navigator.clipboard.writeText(data.info.email)
     copyBtn.classList.add('copied')
     copyBtn.textContent = 'Copied'
 })
