@@ -10,6 +10,12 @@ const email = document.getElementById('email-text');
 const section = document.querySelectorAll('section');
 const pageTitle = document.getElementById('page-title');
 const titleAnchor = document.getElementById('title-anchor');
+// this function is here just to invoke the scroll event on line 305 to to invoke smooth scroll nested function in line 336
+// because with out autoScroll function the first click on nav bar without scrolling
+// will not have the smooth scroll effect
+(function autoScroll() {
+    window.scroll(0, 1);
+})()
 
 // object to store changeable data
 const data = {
