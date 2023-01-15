@@ -184,7 +184,7 @@ const navLinks = (() => {
 // certificates section
 const certificatesContent = (() => {
     const certificatesFragment = new DocumentFragment();
-    for (let i = 0; i < data.certificates.length; i++){
+    for (let i = 0; i < data.certificates.length; i++) {
         const div = document.createElement('div');
         const p = document.createElement('p');
         const projectsDiv = document.createElement('div');
@@ -196,7 +196,7 @@ const certificatesContent = (() => {
         projectText.textContent = 'Projects:'
         projectsDiv.appendChild(projectText)
         if (data.certificates[i].projects) {
-            for (let z = 0; z < data.certificates[i].projects.length; z++){
+            for (let z = 0; z < data.certificates[i].projects.length; z++) {
                 const anchor = document.createElement('a');
                 anchor.setAttribute('href', data.certificates[i].projects[z].link)
                 anchor.setAttribute('target', 'blank')
@@ -217,7 +217,7 @@ const certificatesContent = (() => {
         certificateLinkAnchor.setAttribute('target', 'blank')
         certificateLinkAnchor.setAttribute('href', data.certificates[i].link)
         certificateLinkAnchor.innerHTML = '<button>Certificate link</button>'
-        if(data.certificates[i].projects){div.appendChild(projectsDiv)}
+        if (data.certificates[i].projects) { div.appendChild(projectsDiv) }
         div.appendChild(certificateLinkAnchor)
         //appending created elements to the documentFragment
         certificatesFragment.appendChild(div)
@@ -271,7 +271,6 @@ const skillContent = (() => {
                 style += `${Object.keys(e.style[i])}: ${Object.values(e.style[i])};`
             }
             img.setAttribute('style', style)
-            console.log(style)
         }
         //defining the title of skill
         if (e.name === 'html' || e.name === 'css') {
@@ -322,12 +321,12 @@ document.addEventListener('scroll', () => {
         const navLink = document.getElementById(linkId);
         if (elementPosition.top <= 450 && elementPosition.bottom >= 450) {
             e.classList.add('active-section')
-            navLink.classList.remove('hover-link') 
+            navLink.classList.remove('hover-link')
             navLink.classList.add('active-link')
         } else {
             e.classList.remove('active-section')
             navLink.classList.remove('active-link')
-            navLink.classList.add('hover-link') 
+            navLink.classList.add('hover-link')
         }
         //adding title attribute to page title when reaching the end of the page
         if (e.id == 'contactMe' && elementPosition.top <= 850 && elementPosition.bottom <= 950) {
