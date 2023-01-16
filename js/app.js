@@ -77,6 +77,11 @@ const data = {
                     'background-color': '#a75f98'
                 }
             ]
+        },
+        {
+            name: 'Illustrator',
+            percent: '30%',
+            logo: 'https://www.adobe.com/content/dam/shared/images/product-icons/svg/illustrator.svg'
         }
     ],
     resumeLink: 'https://drive.google.com/file/d/1kWHapGO0FfpJzy1EK26kz1etRbuPoMX6/view?usp=share_link',
