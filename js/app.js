@@ -116,7 +116,7 @@ const data = {
             ],
         },
         {
-            name: 'Angular NanoDegree',
+            name: 'Angular Development Cross-Skilling',
             link: 'https://graduation.udacity.com/confirm/GAG2YEXD',
             date: 'OCT 2022',
             projects: [
