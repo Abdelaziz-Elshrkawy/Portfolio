@@ -64,6 +64,11 @@ const data = {
             logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg'
         },
         {
+            name: 'reactjs',
+            percent: '60%',
+            logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg'
+        },
+        {
             name: 'angular',
             percent: '50%',
             logo: 'https://angular.io/assets/images/logos/angular/angular.svg'
@@ -133,6 +138,17 @@ const data = {
                 {
                     name: 'Weather Journal App',
                     link: 'https://github.com/Abdelaziz-Elshrkawy/weather-journal-app'
+                }
+            ]
+        },
+        {
+            name: 'React Development Cross-Skilling',
+            link: 'https://confirm.udacity.com/XGRXWG5Z',
+            date: 'JAN 2023',
+            projects: [
+                {
+                    name: 'My Reads',
+                    link: 'https://github.com/Abdelaziz-Elshrkawy/Udacity-ReactND-My-Reads'
                 }
             ]
         }
