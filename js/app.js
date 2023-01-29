@@ -40,7 +40,7 @@ const data = {
         },
         {
             name: 'typescript',
-            percent: '70%',
+            percent: '60%',
             logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg'
         },
         {
@@ -67,6 +67,11 @@ const data = {
             name: 'reactjs',
             percent: '60%',
             logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg'
+        },
+        {
+            name: 'react-Native',
+            percent: '40%',
+            logo: 'https://d33wubrfki0l68.cloudfront.net/554c3b0e09cf167f0281fda839a5433f2040b349/ecfc9/img/header_logo.svg'
         },
         {
             name: 'angular',
