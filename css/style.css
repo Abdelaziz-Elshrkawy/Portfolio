@@ -27,7 +27,7 @@ a{
 	text-decoration: none;
 }
 button{
-	background-color: rgb(72, 19, 88);
+	background-color: rgb(43, 74, 211);
 	border: none;
 	border-radius: 10px;
 	height: 40px;
@@ -36,8 +36,11 @@ button{
 	cursor: pointer;
 	transition: 0.2s;
 }
+button:hover:not([name='copied']){
+	background-color: rgb(40, 135, 224);
+}
 button:hover{
-	box-shadow: 0 0 20px 0 rgb(72, 19, 88);
+	box-shadow: 0 0 20px 0 rgb(40, 135, 224);
 	transform: scale(1.05);
 }
 button:active{
@@ -234,6 +237,10 @@ nav h1:active{
 #certificates .container{
 	padding-bottom: 25px;
 	border-bottom: 4px solid;
+	margin-bottom: 150px;
+}
+#certificates .container:last-child{
+	margin-bottom: 30px;
 }
 #certificates div p a img{
 	position: relative;
@@ -271,6 +278,7 @@ nav h1:active{
 }
 .project-div a:hover{
 	background-color: rgba(0, 0, 30, 0.568);
+	box-shadow: 0 0 20px 0 rgb(0,0,30,0.6);
 	color: wheat;
 }
 /*---------------------------*/
@@ -316,6 +324,7 @@ nav h1:active{
 }
 #emailAnchor:hover{
 	letter-spacing: 1px;
+	text-shadow:  1px 0 20px wheat;
 }
 #copy{
 	margin-left: 5px;
@@ -325,6 +334,9 @@ nav h1:active{
 }
 .copied{
 	background-color: rgb(45, 179, 45);
+}
+.copied:hover{
+	box-shadow: 0 0 20px 0 rgb(45, 179, 45);
 }
 #mail-message{
 	display: block;
@@ -376,11 +388,7 @@ nav h1:active{
 	.project-text{
 		display: block;
 	}
-	#egfwd{
-		height: 35px;
-		top: 10px;
-		left: 8px;
-	}
+
 	#certificates div p span{
 		margin-bottom: 10px;
 	}
@@ -395,6 +403,11 @@ nav h1:active{
 		font-size: 20px;
 		transition: 0.3s;
 	}
+	#egfwd{
+		height: 35px;
+		top: 10px;
+		left: 8px;
+	}	
 	#up{
 		bottom: 5px;
 		right: 5px;
