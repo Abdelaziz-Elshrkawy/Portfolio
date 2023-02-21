@@ -192,7 +192,7 @@ document.addEventListener('scroll', () => {
         //getting the matched nav link
         const linkId = `${e.id}-link`
         const navLink = document.getElementById(linkId);
-        if (elementPosition.top <= 450 && elementPosition.bottom >= 450) {
+        if (elementPosition.top <= 460 && elementPosition.bottom >= 450) {
             e.classList.add('active-section')
             navLink.classList.remove('hover-link')
             navLink.classList.add('active-link')
