@@ -175,7 +175,7 @@ copyBtn.addEventListener('click', async () => {
     await navigator.clipboard.writeText(data.info.email)
     copyBtn.classList.add('copied')
     copyBtn.setAttribute('name', 'copied')
-    copyBtn.textContent = 'Copied'
+    copyBtn.textContent = 'Copied';
 })
 
 //scroll action
