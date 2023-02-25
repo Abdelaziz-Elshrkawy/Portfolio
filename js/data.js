@@ -1,4 +1,4 @@
-{
+const data = {
     "info": {
         "email": "abdelaziz_elshrkawy53@yahoo.com"
     },
@@ -151,3 +151,5 @@
         }
     ]
 }
+
+export default data;
